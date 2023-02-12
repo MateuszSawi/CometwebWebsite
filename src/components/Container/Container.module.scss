@@ -1,0 +1,66 @@
+.container {
+	margin: 0;
+	height: auto;
+	background: #fff;
+}
+
+.progessBarBackground {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 0.7%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 98;
+}
+
+::-webkit-scrollbar{
+	width: 0;
+}
+
+.progessbar{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 0.7%;
+	height: 100%;
+	// background: linear-gradient(to top, #008aff, #00ffe7);
+	background: linear-gradient(to top, #1b9bfc, #126599);
+	// animation: animate 5s linear infinite;
+	animation: animate 5s linear;
+	z-index: 99;
+}
+
+@keyframes animate
+{
+	0%, 100%
+	{
+		filter: hue-rotate(0deg);
+	}
+	50%
+	{
+		filter: hue-rotate(360deg);
+	}
+}
+
+#progressbar:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 10px;
+	height: 100%;
+	background: linear-gradient(to top, #1b9bfc, #126599);
+	filter: blur(10px);
+}
+
+#progressbar:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 10px;
+	height: 100%;
+	background: linear-gradient(to top, #1b9bfc, #126599);
+	filter: blur(30px);
+}

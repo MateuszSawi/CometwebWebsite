@@ -1,0 +1,61 @@
+@import './settings.scss';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $color-light;
+  color: $color-dark;
+  letter-spacing: 0.5px;
+}
+
+:global(.container) {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.toggleMenu {
+  display: none;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: left;
+  line-height: 120%;
+  color: #464849;
+  // -webkit-font-smoothing: antialiased;
+  //   text-rendering: optimizeLegibility;
+  //   -moz-osx-font-smoothing: grayscale;
+  //   font-feature-settings: 'liga';
+  //   -webkit-text-size-adjust: 100%;
+  //   margin-block-start: 0.83em;
+  //   margin-block-end: 0.83em;
+  //   margin-inline-start: 0px;
+  //   margin-inline-end: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: sans-serif;
+  letter-spacing: -.01em;
+  word-spacing: -.04em;
+}
+
+p {
+  font-size: 17px;
+  font-weight: 600;
+  font-family: sans-serif;
+  text-align: left;
+  line-height: 200%;
+  color: #464849;
+  margin-top: 0;
+  margin-bottom: 0;
+  // letter-spacing: -.01em;
+  word-spacing: -.01em;
+  text-align: justify;
+}
+
+@import "./typography.scss";
