@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/CometwebWebsite/static/css/main.6c50250f.css",
+    "main.js": "/CometwebWebsite/static/js/main.9367d1ef.js",
+    "index.html": "/CometwebWebsite/index.html",
+    "main.6c50250f.css.map": "/CometwebWebsite/static/css/main.6c50250f.css.map",
+    "main.9367d1ef.js.map": "/CometwebWebsite/static/js/main.9367d1ef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6c50250f.css",
+    "static/js/main.9367d1ef.js"
+  ]
+}
