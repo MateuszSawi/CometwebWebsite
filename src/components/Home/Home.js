@@ -208,8 +208,8 @@ const Home = () => {
       <div className={styles.whoAreWeBackground}
         style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/light.png'})`}}>
         <div className={styles.whoAreWeSection}>
-          <h1 data-aos="slide-down">Kim jesteśmy?</h1>
-          <div className={styles.lines} data-aos="slide-left">
+          <h1 data-aos="fade-down">Kim jesteśmy?</h1>
+          <div className={styles.lines} data-aos="fade-left">
             <div className={styles.FirstLine}></div>
             <div className={styles.SecondLine}></div>
             <div className={styles.ThirdLine}></div>
