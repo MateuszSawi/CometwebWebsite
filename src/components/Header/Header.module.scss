@@ -75,22 +75,219 @@ $duration: .2s;
   position: absolute;
   display: block;
   background: #fff;
-  transition: all $duration linear;
+  transition: all 0.3s linear;
 
   bottom: 0;
   right: 0;
-  transition-delay: $duration/2;
-  transform-origin: top left;
+  transition-delay: 0.1s;
 
   width: 100%;
   height: 2px;
   border-radius: 5px;
   transform: scaleX(0);
+
+  transform-origin: right;
+  transition: transform 0.3s cubic-bezier(.57,.01,.29,.99);
 }
 
 .box:hover {
   .underlineWhite {
-  transform: scaleX(1);
+    transform: scaleX(1);
+    transition-delay: 0.1s;
+    transform-origin: top left;
+  }
+}
+
+.headerMenuBars {
+  position: absolute;
+  display: none;
+}
+
+.wholeMenu {
+  display: none;
+}
+
+.hiddenMenu {
+  display: none;
+}
+
+.toggleMenuDiv {
+  display: none;
+}
+
+.toggleMenuOptionDiv {
+  display: none;
+}
+
+.toggleMenuOptions {
+  display: none;
+}
+
+@media only screen and (max-width: 1120px) {
+  // .headerGapRight {
+  //   width: 0px;
+  // }
+
+  .menuHeaderDiv {
+    display: none;
   }
 
+  .headerMenuBars {
+    // height: 30px;
+    // width: 30px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: absolute;
+    // background: red;
+    z-index: 99999;
+    right: 30px;
+    // margin-right: calc;
+  }
+
+  .wholeMenu {
+    // top: 60px
+    display: flex;
+    height: 200vh;
+    width: 200vw;
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(8px);
+    z-index: 988;
+    // transform: translateX(-167px);
+    // display: none;
+    transition: all 0.4s linear;
+  }
+  
+  .hiddenMenu {
+    display: flex;
+    height: 0vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 0;
+    transition: all 0.4s linear;
+  }
+  
+  .toggleMenuDiv {
+    height: 100vh;
+    width: 100vw;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s linear;
+  }
+
+  .toggleMenuDivHidden {
+    display: none;
+    transition: all 0.4s linear;
+  }
+  
+  .toggleMenuOptionDiv {
+    display: flex;
+    padding: 20px 0px;
+  }
+  
+  .toggleMenuOptions {
+    display: flex;
+    color: #fff;
+    font-size:calc(12px + 2vw);
+    font-weight: 600;
+  }
+}
+
+// @media only screen and (max-width: 500px) {
+//   .headerMenuBars {
+//     // height: 30px;
+//     // width: 30px;
+//     display: flex;
+//     justify-content:center;
+//     align-items: center;
+//     position: absolute;
+//     // background: red;
+//     z-index: 99999;
+//     right: 70px;
+//     // margin-right: calc;
+//   }
+// }
+
+
+
+
+
+.phoneTab {
+  width: 227px;
+  height: 60px;
+  position: fixed;
+  left: 0;
+  z-index: 130;
+  display: flex;
+  justify-content: flex-end;
+  transform: translateX(-167px);
+
+  top: 160px;
+}
+
+.hoverLinePhone {
+  width: 227px;
+  height: 100%;
+}
+
+.hoverInnerPhone {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  transform: translateY(0);
+  transition-duration: 0.8s;
+  transition-delay: 0s;
+
+  background: #0a486e;
+}
+
+.phoneTab:hover .hoverInnerPhone{
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  text-align: right;
+  transform: translateY(0);
+  transform: translateX(167px);
+
+  background: rgb(3, 27, 49);
+}
+
+.phoneTab:hover .number {
+  font-size: 17px;
+  text-align: justify;
+  line-height: 200%;
+  display: inline-block;
+  transition-delay: 0s;
+  transform: translateY(0);
+
+  color: #fff !important;
+}
+
+.number {
+  transition-duration: .7s;
+  transition-delay: 0s;
+  width: 167px;
+  font-weight: 500 !important;
+  letter-spacing: 0.09em !important;
+
+  color: #fff !important;
+}
+
+.imgPhotoDiv {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgPhoto {
+  transform: scale(0.7);
 }

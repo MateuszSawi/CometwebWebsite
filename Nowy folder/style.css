@@ -1,0 +1,128 @@
+/* Given below is Google-Fonts CDN link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'poppins',sans-serif;
+}
+body{
+   background: #eee;
+   overflow: hidden;
+}
+nav{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   padding: 20px 50px;
+   border: 1px solid #f7f7f7;
+   box-shadow: -7px -7px 17px #fff,
+               7px 7px 17px rgba(70,70,70,0.15);
+}
+.icon{
+   font-size: 35px;
+   font-weight: 800;
+   cursor: pointer;
+   color: #778ba5;
+   padding: 10px 15px;
+   border: 1px solid #f7f7f7;
+   border-radius: 10px;
+   box-shadow: -7px -7px 17px #fff,
+               7px 7px 17px rgba(70,70,70,0.15);
+}
+.icon b{
+   color: #1e90ff;
+}
+ol{
+   display: flex;
+   margin: auto 0;
+   list-style: none;
+}
+ol li{
+   margin: 0 10px;
+}
+ol li a{
+   font-size: 20px;
+   color: #778ba5;
+   text-transform: capitalize;
+   text-decoration: none;
+   letter-spacing: 1px;
+   padding: 8px 12px;
+   border: 1px solid #f7f7f7;
+   border-radius: 10px;
+   box-shadow: -7px -7px 17px #fff,
+               7px 7px 17px rgba(70,70,70,0.15);
+}
+ol li:hover a{
+   color: #fff;
+   background: #1e90ff;
+}
+input[type="checkbox"]{
+   display: none;
+}
+.bar{
+   position: relative;
+   display: none;
+}
+.bar span{
+   color: #1e90ff;
+   height: 65px;
+   line-height: 65px;
+   width: 65px;
+   font-size: 35px;
+   text-align: center;
+   border: 1px solid #f7f7f7;
+   border-radius: 10px;
+   box-shadow: -7px -7px 17px #fff,
+               7px 7px 17px rgba(70,70,70,0.15);
+}
+@media screen and (max-width: 1100px){
+   nav{
+      display: block;
+      padding: 0;
+   }
+   .icon{
+      display: inline-block;
+      margin: 20px 50px;
+   }
+   ol{
+      display: block;
+      width: 100%;
+   }
+   ol li{
+      position: relative;
+      margin: 40px 0;
+      display: none;
+   }
+   ol li a{
+      width: 90%;
+      text-align: center;
+      padding: 30px;
+      font-size: 28px;
+      display: block;
+      border-radius: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      position: relative;
+   }
+   .bar{
+      display: block;
+      position: absolute;
+      top: 25px;
+      right: 80px;
+      cursor: pointer;
+   }
+   .bar #times{
+      color: #fe28a2;
+      display: none;
+   }
+   #check:checked ~ nav ol li{
+      display: block;
+   }
+   #check:checked ~ nav .bar #times{
+      display: block;
+   }
+   #check:checked ~ nav .bar #bars{
+      display: none;
+   }
+}

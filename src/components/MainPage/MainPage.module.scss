@@ -1,0 +1,237 @@
+.wrapper{
+  display: flex;
+  width: 100%;
+//  height: calc(100vh - 80px);
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+  overflow: hidden;
+  min-width: 360px;
+}
+
+.logo {
+  z-index: 2;
+  display: flex;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper::before{
+  position: absolute;
+  content: '';
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  left: 0%;
+  top:57%;
+  background: linear-gradient(45deg,#00275B,#45B0FF);
+  animation: object1 6s linear infinite;
+}
+.wrapper::after{
+  position: absolute;
+  content: '';
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  right: 12%;
+  top: 13%;
+  background: linear-gradient(45deg,#00275B,#45B0FF);
+  animation: object2 6s linear infinite;
+}
+@keyframes  object1{
+  50%{
+    left: -2%;
+    top: 60%;
+  }
+}
+@keyframes  object2{
+  50%{
+    right: 12%;
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .wrapper::after{
+    position: absolute;
+    content: '';
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    right: -12%;
+    top: 33%;
+    background: linear-gradient(45deg,#00275B,#45B0FF);
+    animation: object2 6s linear infinite;
+  }
+  @keyframes  object2{
+    50%{
+      right: -12%;
+      top: 30%;
+    }
+  }
+
+  .wrapper::before{
+    position: absolute;
+    content: '';
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    left: -30%;
+    top:67%;
+    background: linear-gradient(45deg,#00275B,#45B0FF);
+    animation: object1 6s linear infinite;
+  }
+  @keyframes  object1{
+    50%{
+      left: -33%;
+      top: 75%;
+    }
+  }
+}
+
+
+// .cols{
+//    width: 50%;
+// }
+.cols0{
+  width: 90%;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+}
+
+.innerDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.gapDiv {
+  height: 100px;
+}
+
+.title{
+  display: flex;
+  flex-wrap: nowrap;
+  font-weight: 700;
+  font-size:calc(26px + 2vw);
+  // font-size: 75px;
+  // color: #3d535f;
+  line-height: 150%;
+  width: 90%;
+}
+
+.multiText{
+  color: #0058CF;
+  text-transform: capitalize;
+  font-size: 55px;
+  font-weight: 800;
+  display: flex;
+  flex-wrap: nowrap;
+  line-height: 150%;
+  font-size:calc(12px + 2vw);
+  word-break: break-all;
+}
+.p{
+  padding-top: 15px;
+  // display: block;
+  width: 90%;
+  // font-weight: 700;
+  // font-size: em;
+  // color: #3d535f;
+}
+.btns{
+  width: 100%;
+  position: relative;
+  left: 35px;
+}
+.button{
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #464849;
+  padding: 8px 14px;
+  margin: 40px 0px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  box-shadow: 5px 10px 10px rgba(0,0,0,0.4);
+
+  font-size: 18px;
+  font-weight: 500;
+  font-family: sans-serif;
+  line-height: 150%;
+  word-spacing: -.01em;
+}
+button:hover{
+  background-color: #00275B;
+}
+.imgbox{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.imaged{
+  position: relative;
+  height: 100%;
+  width: calc(130% - 80px);
+  top: -100px;
+  right: 50px;
+  transform: rotateY(180deg);
+  animation: animateUser 4s linear infinite;
+}
+@keyframes animateUser{
+  50%{
+    right: 30px;
+    top: -90px;
+  }
+}
+.imgbox #splash{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(-35deg);
+  width: 160%;
+  filter: saturate(200%);
+  animation: animate 4s linear infinite;
+}
+@keyframes animate{
+  50%{
+    top: 49%;
+    left: 51%;
+    width: 155%;
+  }
+}
+
+
+
+
+
+
+
+// .typed-cursor{
+//   opacity: 1;
+//   animation: typedjsBlink 0.7s infinite;
+//   -webkit-animation: typedjsBlink 0.7s infinite;
+//   animation: typedjsBlink 0.7s infinite;
+// }
+// @keyframes typedjsBlink{
+//   50% { opacity: 0.0; }
+// }
+// @-webkit-keyframes typedjsBlink{
+//   0% { opacity: 1; }
+//   50% { opacity: 0.0; }
+//   100% { opacity: 1; }
+// }
+// .typed-fade-out{
+//   opacity: 0;
+//   transition: opacity .25s;
+//   -webkit-animation: 0;
+//   animation: 0;
+// }

@@ -3,9 +3,10 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCameraRetro } from "@fortawesome/free-solid-svg-icons";
-// import 'font-awesome/css/font-awesome.min.css';
+import { FaMobileAlt } from "react-icons/fa";
+import { FaFacebookSquare, FaPhoneAlt, FaEnvelope, FaAngleRight, BsPhone } from "react-icons/fa";
+import MainPage from '../MainPage/MainPage';
+import Cards from '../Cards/Cards';
 
 const Home = () => {
 
@@ -15,23 +16,23 @@ const Home = () => {
 
   return (
     <>
-    <div className={styles.servicesBack} style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/websbackground.png'})`}}>
-      <div className={styles.imageContainer}
-        // style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/homepageimg.jpeg'})`}}
-      >
-        <img className={styles.waveBackground} alt="wavebackground" src={`${process.env.PUBLIC_URL}/wavebackground.png`}></img>
-        <img className={styles.wave} alt="wave" src={`${process.env.PUBLIC_URL}/wave.png`}></img>
+
+<div className={styles.servicesBack} style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/bakii.png'})`}}>
+    <MainPage />
+    
+      {/* <div className={styles.imageContainer}
+        style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/gal.png'})`}}
+      ><FaMobileAlt />
         <div className={styles.innerDiv}>
           <img className={styles.logo} alt="CometwebLogo" src={`${process.env.PUBLIC_URL}/Cometweb/logocut.png`}></img>
-          <h3 className={styles.companyDescription}>Tworzymy Twoją przyszłość w Internecie</h3>
         </div>
-      </div>
+      </div> */}
 
       <div className={styles.phoneTab}>
         <div className={styles.hoverLinePhone}>
           <div className={styles.hoverInnerPhone}>
             <p className={styles.number}>
-              &nbsp;&nbsp; +48 <strong>690 688 835</strong>
+              &nbsp;&nbsp; +48 <strong>690 688 835 </strong>
             </p>
             <div className={styles.imgPhotoDiv}>
               <img className={styles.imgPhoto} alt="phone" src={`${process.env.PUBLIC_URL}/tel.png`}></img>
@@ -65,11 +66,15 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+    </div>
+    
+    
 
-      <div className={styles.aboutUsBackground} >
+      <div className={styles.gapAfterMain}></div>
+
+      {/* <div className={styles.aboutUsBackground} >
         <div className={styles.aboutUsSection} >
-        {/* <div className={styles.aboutUsLabel}> */}
+        
           <h1 className={styles.whatWeDoing} data-aos="fade-down">Czym się zajmujemy?</h1>
           <div className={styles.lines} data-aos="fade-left">
             <div className={styles.FirstLine}></div>
@@ -88,8 +93,8 @@ const Home = () => {
             tak aby zapewnić Tobie nie tylko świetnie wyglądającą stronę i niezawodną aplikację, ale również najefektywniej rozpromować ją w sieci.
           </p>
         </div>
-        {/* </div> */}
-      </div>
+        
+      </div> */}
 
       {/* <div className={styles.servicesBack} style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/pointer.png'})`}}> */}
       <div className={styles.sevicesSection}>
@@ -200,7 +205,7 @@ const Home = () => {
 
       <div className={styles.contactUsSection} 
         style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/wycena.jpg'})`}}>
-        <Link to="/contact">
+        <Link className={styles.buttonContactLink} to="/contact">
           <button className={styles.buttonContact}><div>&nbsp;&nbsp; Skontaktuj się z nami po darmową wycenę &nbsp;&nbsp;</div></button>
         </Link>
       </div>
@@ -237,28 +242,90 @@ const Home = () => {
             strategię marketingową online, posiadamy wiedzę i doświadczenie, które pomogą Ci zwiększyć zyski i odnieść sukces.
           </p>
         </div>
+        
+        {/* <div className={styles.thinkGap}></div> */}
 
-        <div className={styles.thinkGap}></div>
+        {/* <div className={styles.howWeWorkSection}> */}
+        <div className={styles.howWeWorkSectionLabel}>
+          <div className={styles.howWeWorkTopLabel}>
+            <h1 data-aos="fade-down">Jak pracujemy?</h1>
+            <div className={styles.lines} data-aos="fade-left">
+              <div className={styles.FirstLine}></div>
+              <div className={styles.SecondLine}></div>
+              <div className={styles.ThirdLine}></div>
+            </div>
+          </div>
+        </div>
+          
+        <div className={styles.howWeWorkSection}>
+          <div className={styles.stepsDiv}>
+            <div className={styles.steps}>
+              <div className={styles.singleStep}>
+                <div className={styles.stepTitleDiv}>
+                  <Cards title='Wymagania i wycena' cardImgId='icon1'
+                    desc='Najpierw, musimy zrozumieć Twój projekt, aby móc spełnić Twoje oczekiwania.
+                      Przygotujemy dokładną wycenę i oszacujemy potrzebny czas na realizację.'
+                  />
+                </div>
 
-        <div className={styles.think}
-        // style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/wycena.jpg'})`}}
-        ></div>
+                <div className={styles.leftBar}>
+                  <div className={styles.stepEmpty}></div>
+                  <div className={styles.dotLeft}>
+                    <div className={styles.innerDot}></div>
+                  </div>
+                  <div className={styles.stepProgressBarLeft}></div>
+                </div>
+              </div>
 
-        <div className={styles.thinkGap}></div>
+              <div className={styles.singleStep}>
+                <div className={styles.stepTitleDiv}>
+                  <Cards title='Planowanie i projektowanie' cardImgId='icon2'
+                    desc='Zaplanujemy naszą pracę, zidentyfikujemy możliwe wyzwania i upewnimy się, 
+                      że możliwe jest spełnienie wszystkich wymagań.
+                      Zaprojektujemy Twoją aplikację i przygotujemy architekturę systemu.'
+                  />
+                </div>
 
-        <div className={styles.howWeWork}>
+                <div className={styles.stepProgressBarFull}>
+                  <div className={styles.dot}>
+                    <div className={styles.innerDot}></div>
+                  </div>
+                </div>
+              </div>
+            
+              <div className={styles.singleStep}>
+                <div className={styles.stepTitleDiv}>
+                  <Cards title='Kodowanie i testowanie' cardImgId='icon3'
+                    desc='Powołamy do życia Twoją aplikację, tworząc front-end i back-end.
+                      Zadbamy o jej bezpieczeństwo oraz upewnimy się, że aplikacja działa zgodnie z założeniami.'
+                  />
+                </div>
 
+                <div className={styles.stepProgressBarFull}>
+                  <div className={styles.dot}>
+                    <div className={styles.innerDot}></div>
+                  </div>
+                </div>
+              </div>
 
+              <div className={styles.singleStep}>
+                <div className={styles.stepTitleDiv}>
+                  <Cards title='Wdrożenie i utrzymanie' cardImgId='icon4'
+                    desc='Kiedy Twoja aplikacja będzie gotowa, zostanie uruchomiona i będzie utrzymywana. 
+                      Jeśli będzie to planowane, opracujemy dodatkowe funkcje.'
+                  />
+                </div>
 
-
-
-
-
-
-
-
-
-
+                <div className={styles.leftBar}>
+                  <div className={styles.stepProgressBarLeft}></div>
+                  <div className={styles.dotLeft}>
+                    <div className={styles.innerDot}></div>
+                  </div>
+                  <div className={styles.stepEmpty}></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className={styles.ourValuesSection}>
@@ -277,30 +344,110 @@ const Home = () => {
 
 
 
-          
+
+
+
+
         </div>
       </div>
 
+      {/* //--------------------------------------------------------// */}
+      {/* //------------------------ FOOTER ------------------------// */}
+      {/* //--------------------------------------------------------// */}
+
       <footer className={styles.footerSection}>
         <div className={styles.footerContainer}>
-          <p className={styles.footerColumnOne}>
-            Niezależnie od tego, czy chcesz uruchomić nową stronę internetową, odświeżyć istniejącą, czy poprawić swoją 
-            strategię marketingową online, posiadamy wiedzę i doświadczenie, które pomogą Ci zwiększyć zyski i odnieść sukces.
-          </p>
+          <div className={styles.footerWrapper}>
+            <div  className={styles.footerNav}>
+              <div className={styles.box}>
+                <p className={styles.footerColumn}>
+                  Strony i aplikacje webowe
+                </p> 
+                <span className={styles.underlineWhite}></span>
+              </div>
 
-          <p className={styles.footerColumnTwo}>
-            Niezależnie od tego, czy chcesz uruchomić nową stronę internetową, odświeżyć istniejącą, czy poprawić swoją 
-            strategię marketingową online, posiadamy wiedzę i doświadczenie, które pomogą Ci zwiększyć zyski i odnieść sukces.
-          </p>
+              <div className={styles.box}>
+                <p className={styles.footerColumn}>
+                  Social media marketing
+                </p> 
+                <span className={styles.underlineWhite}></span>
+              </div>
 
-          <p className={styles.footerColumnThree}>
-            Niezależnie od tego, czy chcesz uruchomić nową stronę internetową, odświeżyć istniejącą, czy poprawić swoją 
-            strategię marketingową online, posiadamy wiedzę i doświadczenie, które pomogą Ci zwiększyć zyski i odnieść sukces.
-          </p>
-          <i class="fa-solid fa-shield-halved"></i>
-          <a href="#" id="z"><FontAwesomeIcon className={styles.fontawesomeIcon} icon="fa-brands fa-twitter" /></a>
-          <FontAwesomeIcon icon="fa-solid fa-shield-halved" />
-          
+              <div className={styles.box}>
+                <p className={styles.footerColumn}>
+                  Vulnerability testy
+                </p> 
+                <span className={styles.underlineWhite}></span>
+              </div>
+
+              <div className={styles.box}>
+                <p className={styles.footerColumn}>
+                  Portfolio
+                </p> 
+                <span className={styles.underlineWhite}></span>
+              </div>
+
+              <div className={styles.box}>
+                <p className={styles.footerColumn}>
+                  Kontakt
+                </p> 
+                <span className={styles.underlineWhite}></span>
+              </div>
+            </div>
+
+            <div  className={styles.footerNav}>
+              <div className={styles.box}>
+                <p className={styles.footerColumn}>
+                  <FaAngleRight />  Polityka prywatności
+                </p>
+                <span className={styles.underlineWhite}></span>
+              </div>
+
+              <div className={styles.box}>
+                <p className={styles.footerColumn}>
+                  <FaAngleRight /> Polityka Cookie
+                </p> 
+                <span className={styles.underlineWhite}></span>
+              </div>
+
+              <div className={styles.box}>
+                <p className={styles.footerColumn}>
+                  <FaAngleRight /> FAQ
+                </p>  
+                <span className={styles.underlineWhite}></span>
+              </div>
+            </div>
+
+            <div  className={styles.footerNav}>
+              <div className={styles.box}>
+                <p className={styles.footerColumn}>
+                  <FaEnvelope /> kontakt@cometweb.pl
+                </p>
+                <span className={styles.underlineWhite}></span>
+              </div>
+
+              <div className={styles.box}>
+                <p className={styles.footerColumn}>
+                  <FaPhoneAlt/> +48 690 688 835
+                </p> 
+                <span className={styles.underlineWhite}></span>
+              </div>
+
+              <div className={styles.box}>
+                <p className={styles.footerColumn}>
+                  <FaFacebookSquare/> fb.com/cometweb
+                </p> 
+              <span className={styles.underlineWhite}></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.copyrightFooter}>
+          <div className={styles.copyrightDiv}>
+            <p>© All rights reserved</p>
+            <img className={styles.footerLogo} alt="CometwebLogo" src={`${process.env.PUBLIC_URL}/Cometweb/1transparentdown.png`}></img>
+          </div>
         </div>
       </footer>
     </>
