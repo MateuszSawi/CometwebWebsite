@@ -1,110 +1,73 @@
-.tutorial {
-  // padding-top: 10px;
-  // min-height: 70%;
-  height: 80%;
-  width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  min-width: 300px;
-  
-  justify-content: space-around;
-}
-
-.middle {
-  position: relative;
-}
-.card {
-  // min-height: 340px;
-  // min-height: 70%;
-  // max-height: 80%;
-  width: 80%;
-  height: 420px;
-}
-
-.front,.back {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  backface-visibility: hidden;
-  position: absolute;
-  transition: transform .6s linear;
-  // transition-delay: .1s;
-
-  border-radius: 10px ;
-  // box-shadow: 0px 0px 10px 2px #8e8e8e;
-  // background: rgba(0,0,0,0.1);
+.a {
+  height: 400px;
+  width: 300px;
+  border-radius: 5px;
   box-shadow: -7px -7px 17px #eee,
               7px 7px 17px rgba(70,70,70,0.45);
 }
 
-.front img {
-  height: 100%;
+@media only screen and (max-width: 1600px) {
+  .a {
+    width: 260px;
+  }
 }
 
-.front:before {
-  height: 100%;
-  // width: 30%;
-  content: '';
-  position: absolute;
-  background: rgba(0,0,0,0.05);
-  
-  transform: skewX(30deg);
+@media only screen and (max-width: 1400px) {
+  .a {
+    width: 400px;
+  }
 }
 
-.front {
-  transform: perspective(600px) rotateY(0deg);
+@media only screen and (max-width: 1100px) {
+  .a {
+    width: 300px;
+  }
+}
 
-  border-radius: 15px;
-  // background: red;
-
+.b{
   height: 100%;
   width: 100%;
   overflow: hidden;
-  position: absolute;
-
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.back {
-  // background: green;
+
+.c {
   height: 100%;
-  width: 100%;
-  overflow: hidden;
-  position: absolute;
-  transform: perspective(600px) rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 10px;
+  background: rgba(0,0,0,0);
+  backdrop-filter: blur(12px);
+  transform: translateY(-500px);
+  transition-delay: 0s;
+  transition-duration: 0.6s;
 }
 
-.back:before {
+.a:hover .c {
   height: 100%;
-  width: 80%;
-  content: '';
-  position: absolute;
-  // background: rgba(0,0,0,0.05);
-  transform: skewX(-30deg);
+  transition-delay: 0s;
+  transition-duration: 0.6s;
+  transform: translateY(0);
 }
 
-.back_content {
-  color: #2c3e50;
+.d {
+  width: 300px;
+  position: absolute;
+}
+
+.d h1 {
   text-align: center;
-  width: 100%;
 }
 
-.card:hover > .front {
-  transform: perspective(600px) rotateY(-180deg);
-}
-.card:hover > .back {
-  transform: perspective(600px) rotateY(0deg);
+.e {
+  display: flex;
+  justify-content: center;
 }
 
-.pBack {
-  padding: 0px 20px 20px 20px;
-}
-
-.hFront {
-
-}
-
-.iconDiv {
-  padding: 20px 0px;
+.c p {
+  text-align: center;
 }

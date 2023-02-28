@@ -35,36 +35,35 @@ const Header = () => {
 
         <div className={styles.box}>
           <p className={styles.menuOptions}>Strony i aplikacje webowe</p>
-        <span className={styles.underlineWhite}></span>
+          <span className={styles.underlineWhite}></span>
         </div>
 
         <div className={styles.menuGap}></div>
 
         <div className={styles.box}>
           <p className={styles.menuOptions}>Social media marketing</p>
-        <span className={styles.underlineWhite}></span>
-        {/* <span className={styles.underlineGray}></span> */}
+          <span className={styles.underlineWhite}></span>
         </div>
 
         <div className={styles.menuGap}></div>
 
         <div className={styles.box}>
           <p className={styles.menuOptions}>Vulnerability testy</p>
-        <span className={styles.underlineWhite}></span>
+          <span className={styles.underlineWhite}></span>
         </div>
 
         <div className={styles.menuGap}></div>
 
-        <div className={styles.box}>
+        {/* <div className={styles.box}>
           <p className={styles.menuOptions}>Portfolio</p>
-        <span className={styles.underlineWhite}></span>
-        </div>
+          <span className={styles.underlineWhite}></span>
+        </div> */}
 
-        <div className={styles.menuGap}></div>
+        {/* <div className={styles.menuGap}></div> */}
 
         <div className={styles.box}>
           <p className={styles.menuOptions}>Kontakt</p>
-        <span className={styles.underlineWhite}></span>
+          <span className={styles.underlineWhite}></span>
         </div>
       </div>
 

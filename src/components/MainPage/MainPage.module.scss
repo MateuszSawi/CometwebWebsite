@@ -64,6 +64,7 @@
     top: 33%;
     background: linear-gradient(45deg,#00275B,#45B0FF);
     animation: object2 6s linear infinite;
+    display: none;
   }
   @keyframes  object2{
     50%{

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FaMobileAlt } from "react-icons/fa";
-import { FaFacebookSquare, FaPhoneAlt, FaEnvelope, FaAngleRight, BsPhone } from "react-icons/fa";
+import { FaFacebookSquare, FaPhoneAlt, FaEnvelope, FaAngleRight } from "react-icons/fa";
 import MainPage from '../MainPage/MainPage';
 import Cards from '../Cards/Cards';
 
@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <>
 
-<div className={styles.servicesBack} style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/bakii.png'})`}}>
+    <div className={styles.servicesBack} style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/bakii.png'})`}}>
     <MainPage />
     
       {/* <div className={styles.imageContainer}
@@ -211,38 +211,7 @@ const Home = () => {
       </div>
 
       <div className={styles.whoAreWeBackground}
-        style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/light.png'})`}}>
-        <div className={styles.whoAreWeSection}>
-          <h1 data-aos="fade-down">Kim jesteśmy?</h1>
-          <div className={styles.lines} data-aos="fade-left">
-            <div className={styles.FirstLine}></div>
-            <div className={styles.SecondLine}></div>
-            <div className={styles.ThirdLine}></div>
-          </div>
-          <p className={styles.whoAreWeDesc}>
-            Cometweb założone zostało przez trójkę przyjaciół znających się od dzieciństwa, kochających kodowanie i projektowanie
-            stron internetowych. Razem ukończyliśmy politechnikę Gdańską, po czym latami w największych korporacjach zdobywaliśmy doświadczenie, 
-            które teraz wykorzystujemy w budowaniu silnej pozycji w Internecie naszych klientów. 
-          </p>
-
-          <div className={styles.lineGap}></div>
-
-          <p className={styles.whoAreWeDesc}>
-            W Cometweb rozumiemy jak ważna jest silna obecność w sieci w dzisiejszym cyfrowym świecie. 
-            Dlatego też ściśle współpracujemy z naszymi klientami, aby zrozumieć ich cele i wizje, a następnie przełożyć 
-            je na stronę internetową, która dokładnie reprezentuje ich markę i napędza wyniki.
-            Wykorzystujemy najnowsze technologie i trendy w projektowaniu, aby tworzyć strony internetowe, które są nie 
-            tylko atrakcyjne wizualnie, ale również funkcjonalne i przyjazne dla użytkownika.
-          </p>
-
-          <div className={styles.lineGap}></div>
-
-          <p className={styles.whoAreWeDesc}>
-            Niezależnie od tego, czy chcesz uruchomić nową stronę internetową, odświeżyć istniejącą, czy poprawić swoją 
-            strategię marketingową online, posiadamy wiedzę i doświadczenie, które pomogą Ci zwiększyć zyski i odnieść sukces.
-          </p>
-        </div>
-        
+        style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/light.png'})`}}>        
         {/* <div className={styles.thinkGap}></div> */}
 
         {/* <div className={styles.howWeWorkSection}> */}
@@ -310,7 +279,7 @@ const Home = () => {
 
               <div className={styles.singleStep}>
                 <div className={styles.stepTitleDiv}>
-                  <Cards title='Wdrożenie i utrzymanie' cardImgId='icon4'
+                  <Cards className={styles.gh} title='Wdrożenie i utrzymanie' cardImgId='icon4'
                     desc='Kiedy Twoja aplikacja będzie gotowa, zostanie uruchomiona i będzie utrzymywana. 
                       Jeśli będzie to planowane, opracujemy dodatkowe funkcje.'
                   />
@@ -328,27 +297,96 @@ const Home = () => {
           </div>
         </div>
 
-        <div className={styles.ourValuesSection}>
 
 
+          
+
+          {/* 
+          
+          Zbudować wybitny zespół ekspertów, który poradzi sobie z każdym wyzwaniem
+
+          Traktować każdego klienta jako część zespołu
+
+          Rozwijaj tylko te projekty, w które wierzymy
+
+          Traktujemy każdy projekt - mały czy duży - jako równie ważny
+
+          Proponuj ulepszenia i przyczyniaj się do sukcesu projektu
+
+          Znajdź czas dla klientów, kiedy tylko tego potrzebują
+
+          Wkładamy całe serce w to, co robimy
+
+          Poszerzamy naszą wiedzę i dzielimy się nią z klientami
+
+          Bądź dumny z tego, co dostarczamy 
+          
+          */}
+
+          
 
 
+        <div className={styles.whoAreWeSection}>
+          <h1 data-aos="fade-down">Kim jesteśmy?</h1>
+          <div className={styles.lines} data-aos="fade-left">
+            <div className={styles.FirstLine}></div>
+            <div className={styles.SecondLine}></div>
+            <div className={styles.ThirdLine}></div>
+          </div>
+          <p className={styles.whoAreWeDesc}>
+            Cometweb założone zostało przez trójkę przyjaciół znających się od dzieciństwa, kochających kodowanie i projektowanie
+            stron internetowych. Razem ukończyliśmy politechnikę Gdańską, po czym latami w największych korporacjach zdobywaliśmy doświadczenie, 
+            które teraz wykorzystujemy w budowaniu silnej pozycji w Internecie naszych klientów. 
+          </p>
 
+          <div className={styles.lineGap}></div>
 
+          <p className={styles.whoAreWeDesc}>
+            W Cometweb rozumiemy jak ważna jest silna obecność w sieci w dzisiejszym cyfrowym świecie. 
+            Dlatego też ściśle współpracujemy z naszymi klientami, aby zrozumieć ich cele i wizje, a następnie przełożyć 
+            je na stronę internetową, która dokładnie reprezentuje ich markę i napędza wyniki.
+            Wykorzystujemy najnowsze technologie i trendy w projektowaniu, aby tworzyć strony internetowe, które są nie 
+            tylko atrakcyjne wizualnie, ale również funkcjonalne i przyjazne dla użytkownika.
+          </p>
 
+          <div className={styles.lineGap}></div>
 
-
-
-
-
-
-
-
-
-
-
-
+          <p className={styles.whoAreWeDesc}>
+            Niezależnie od tego, czy chcesz uruchomić nową stronę internetową, odświeżyć istniejącą, czy poprawić swoją 
+            strategię marketingową online, posiadamy wiedzę i doświadczenie, które pomogą Ci zwiększyć zyski i odnieść sukces.
+          </p>
         </div>
+
+        <div className={styles.ourValuesSection}>
+          <p className={styles.footerColumn}>
+            <FaAngleRight />  Polityka prywatności
+          </p>
+
+          <p className={styles.footerColumn}>
+            <FaAngleRight />  Polityka prywatności
+          </p>
+
+          <p className={styles.footerColumn}>
+            <FaAngleRight />  Polityka prywatności
+          </p>
+
+          <p className={styles.footerColumn}>
+            <FaAngleRight />  Polityka prywatności
+          </p>
+
+          <p className={styles.footerColumn}>
+            <FaAngleRight />  Polityka prywatności
+          </p>
+
+          <p className={styles.footerColumn}>
+            <FaAngleRight />  Polityka prywatności
+          </p>
+
+          <p className={styles.footerColumn}>
+            <FaAngleRight />  Polityka prywatności
+          </p>
+        </div>
+
       </div>
 
       {/* //--------------------------------------------------------// */}
@@ -380,12 +418,12 @@ const Home = () => {
                 <span className={styles.underlineWhite}></span>
               </div>
 
-              <div className={styles.box}>
+              {/* <div className={styles.box}>
                 <p className={styles.footerColumn}>
                   Portfolio
                 </p> 
                 <span className={styles.underlineWhite}></span>
-              </div>
+              </div> */}
 
               <div className={styles.box}>
                 <p className={styles.footerColumn}>

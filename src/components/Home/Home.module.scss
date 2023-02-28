@@ -751,7 +751,7 @@
   width: 68%;
   margin: 0 auto;
   overflow: hidden;
-  padding-top: 80px;
+  padding-top: 150px;
 }
 
 .whoAreWeDesc {
@@ -786,9 +786,7 @@
 }
 
 .howWeWorkSection {
-  // height: 700px;
   display: flex;
-  // background-size: cover;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -803,7 +801,6 @@
 
 .stepsDiv {
   width: 80%;
-  // margin-bottom: 100px;
   height: auto;
   display: flex;
   justify-content: center;
@@ -812,26 +809,22 @@
 
 .steps {
   width: 100%;
-  // height: 500px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  // flex-direction: row;
 }
 
 .singleStep {
   width: 25%;
-  // height: 500px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   min-width: 260px;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1400px) {
   .singleStep {
     width: 50%;
-    // height: 500px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -839,14 +832,17 @@
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .singleStep {
+    width: 100%;
+  }
+}
+
 .stepTitleDiv {
   width: 100%;
-  // height: 500px;
-  // height: fit-content;
   width: auto;
   height: 500px;
   margin: 0px 25px 30px 25px;
-  // margin-bottom: 60px;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -882,8 +878,6 @@
   align-items: center;
   height: 10px;
   width: 100%;
-
-  // display: none;
 }
 
 .dotLeft {
@@ -905,8 +899,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  // display: none;
 }
 
 .dot {
@@ -928,7 +920,9 @@
   transition-duration: 0.2s;
 }
 
-.dotLeft:hover {
+// =====
+
+.singleStep:hover .dotLeft {
   height: 38px;
   width: 38px;
   background: #126599;
@@ -941,7 +935,7 @@
   transition-duration: 0.2s;
 }
 
-.dotLeft:hover .innerDot{
+.singleStep:hover .innerDot{
   height: 16px;
   width: 16px;
   background: #1b9bfc;
@@ -950,7 +944,7 @@
   position: absolute;
 }
 
-.dot:hover {
+.singleStep:hover .dot{
   height: 38px;
   width: 38px;
   background: #126599;
@@ -963,7 +957,7 @@
   transition-duration: 0.2s;
 }
 
-.dot:hover .innerDot{
+.singleStep:hover .innerDot{
   height: 16px;
   width: 16px;
   background: #1b9bfc;
@@ -972,7 +966,8 @@
   position: absolute;
 }
 
-@media only screen and (max-width: 1300px) {
+// 1300
+@media only screen and (max-width: 1400px) {
   .leftBar, .stepProgressBarFull {
     display: none;
   }
@@ -1006,26 +1001,31 @@
 //-------------------------------------- our values
 
 .ourValuesSection {
-  height: 100px;
+  height: 300px;
+  width: 70%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  border: solid 1px #000;
+
+  margin: 150px 0px 0px 0px;
 }
 
 
 
 
+.carousel {
+  background: red;
+}
 
+.xx {
+  background: red;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+// autoPlay={false}
 
 
 

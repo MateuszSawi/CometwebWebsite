@@ -1,17 +1,30 @@
 .header{
-  // background: #000;
-  // min-height: 48px;
   height: 60px;
-  width: 99.3%;
+  width: 99.3vw;
   position: fixed;
   top: 0;
-  background: rgba(0, 0, 0, 0.75);    /*  40% opaque green */ 
+  background: rgba(0, 0, 0, 0.75);
   z-index: 989;
-
-  // display: block;
   display: flex;
-  // justify-content: space-between;
   align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .header{
+    // background: #000;
+    // min-height: 48px;
+    height: 60px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.75);    /*  40% opaque green */ 
+    z-index: 989;
+  
+    // display: block;
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .headerGapLeft{
@@ -124,10 +137,6 @@ $duration: .2s;
 }
 
 @media only screen and (max-width: 1120px) {
-  // .headerGapRight {
-  //   width: 0px;
-  // }
-
   .menuHeaderDiv {
     display: none;
   }
