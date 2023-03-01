@@ -7,6 +7,7 @@ import { FaMobileAlt } from "react-icons/fa";
 import { FaFacebookSquare, FaPhoneAlt, FaEnvelope, FaAngleRight } from "react-icons/fa";
 import MainPage from '../MainPage/MainPage';
 import Cards from '../Cards/Cards';
+import Values from '../Values/Values';
 
 const Home = () => {
 
@@ -359,31 +360,31 @@ const Home = () => {
 
         <div className={styles.ourValuesSection}>
           <p className={styles.footerColumn}>
-            <FaAngleRight />  Polityka prywatności
+            <FaAngleRight />  Tworzymy unikalne i wyróżniające się na tle konkurencji projekty
           </p>
 
           <p className={styles.footerColumn}>
-            <FaAngleRight />  Polityka prywatności
+            <FaAngleRight />  Skupiamy się na Twoich potrzebach, jasna i skuteczna komunikacja jest niezbędna, aby być pewnym, że spełnimy wszystkie Twoje wymagania
           </p>
 
           <p className={styles.footerColumn}>
-            <FaAngleRight />  Polityka prywatności
+            <FaAngleRight />  Pracujemy w zespole ekspertów, którzy poradzą sobie z każdym zadaniem i jak najszybciej dostarczą Ci gotową aplikację
           </p>
 
           <p className={styles.footerColumn}>
-            <FaAngleRight />  Polityka prywatności
+            <FaAngleRight />  Dbamy o każdy szczegół, aby każdy aspekt strony internetowej działa poprawnie i spełniał Twoje wymagania
           </p>
 
           <p className={styles.footerColumn}>
-            <FaAngleRight />  Polityka prywatności
+            <FaAngleRight />  Stale się rozwijamy, jesteśmy na bieżąco z najnowszymi trendami i technologiami
           </p>
 
           <p className={styles.footerColumn}>
-            <FaAngleRight />  Polityka prywatności
+            <FaAngleRight />  Każdy projekt - mały czy duży - traktujemy jako równie ważny
           </p>
 
           <p className={styles.footerColumn}>
-            <FaAngleRight />  Polityka prywatności
+            <FaAngleRight />  Wkładamy całe serce w to co robimy, jesteśmy dumnie z aplikacji, które dostarczamy
           </p>
         </div>
 
