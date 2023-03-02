@@ -4,32 +4,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.3.0",
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@fortawesome/react-native-fontawesome": "^0.3.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "3d-react-carousal": "^5.0.0",
     "aos": "^2.3.4",
-    "carousel-react-rcdev": "^0.0.5",
     "clsx": "^1.2.1",
-    "express": "^4.18.2",
     "firebase": "^9.17.1",
     "gh-pages": "^5.0.0",
-    "gsap": "^3.11.4",
-    "nodemon": "^2.0.20",
     "react": "^18.2.0",
-    "react-carousel3": "^1.0.0",
     "react-dom": "^18.2.0",
-    "react-draggable": "^4.4.5",
-    "react-gsap": "^3.2.1",
     "react-icons": "^4.7.1",
-    "react-id-swiper": "^4.0.0",
+    "react-native-svg": "^13.8.0",
+    "react-native-web": "^0.18.12",
     "react-router-dom": "^6.8.1",
     "react-scripts": "^5.0.1",
-    "swiper": "^9.1.0",
     "typed.js": "^2.0.12",
     "web-vitals": "^2.1.4"
   },
@@ -58,5 +49,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^8.35.0",
+    "eslint-config-react-app": "^7.0.1"
   }
 }

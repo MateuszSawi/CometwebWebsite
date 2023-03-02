@@ -5,10 +5,8 @@ import WebDesign from './components/WebDesign/WebDesign';
 import Smm from './components/Smm/Smm';
 import Contact from './components/Contact/Contact';
 import CyberSecTests from './components/CyberSecTests/CyberSecTests';
+import Footer from './components/Footer/Footer';
 import { Routes, Route } from 'react-router-dom';
-// import { response } from 'express';
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 
 const App = () => {
 
@@ -43,6 +41,7 @@ const App = () => {
             element={<Contact />} />
         </Routes>
       </Container>
+      <Footer />
     </>
   );
 };

@@ -3,8 +3,6 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { FaMobileAlt } from "react-icons/fa";
-import { FaFacebookSquare, FaPhoneAlt, FaEnvelope, FaAngleRight } from "react-icons/fa";
 import MainPage from '../MainPage/MainPage';
 import Cards from '../Cards/Cards';
 import Values from '../Values/Values';
@@ -216,6 +214,64 @@ const Home = () => {
         {/* <div className={styles.thinkGap}></div> */}
 
         {/* <div className={styles.howWeWorkSection}> */}
+        
+          
+        
+
+
+
+          
+
+          {/* 
+          
+          Zbudować wybitny zespół ekspertów, który poradzi sobie z każdym wyzwaniem
+
+          Traktować każdego klienta jako część zespołu
+
+          Rozwijaj tylko te projekty, w które wierzymy
+
+          Traktujemy każdy projekt - mały czy duży - jako równie ważny
+
+          Proponuj ulepszenia i przyczyniaj się do sukcesu projektu
+
+          Znajdź czas dla klientów, kiedy tylko tego potrzebują
+
+          Wkładamy całe serce w to, co robimy
+
+          Poszerzamy naszą wiedzę i dzielimy się nią z klientami
+
+          Bądź dumny z tego, co dostarczamy 
+          
+          */}
+
+          
+
+
+        <div className={styles.whoAreWeSection}>
+          <h1 data-aos="fade-down">Czym się zajmujemy?</h1>
+          <div className={styles.lines} data-aos="fade-left">
+            <div className={styles.FirstLine}></div>
+            <div className={styles.SecondLine}></div>
+            <div className={styles.ThirdLine}></div>
+          </div>
+          <p className={styles.whoAreWeDesc}>
+            W Cometweb rozumiemy jak ważna jest silna obecność w sieci w dzisiejszym cyfrowym świecie, 
+            dlatego też ściśle współpracujemy z naszymi klientami, aby zrozumieć ich cele i wizje, a następnie przełożyć 
+            je na stronę internetową, która dokładnie reprezentuje ich markę oraz napędza wyniki.
+            Wykorzystujemy najnowsze technologie i trendy w projektowaniu, aby tworzyć strony internetowe, które są nie 
+            tylko atrakcyjne wizualnie, ale również funkcjonalne i przyjazne dla użytkownika.
+          </p>
+
+          <div className={styles.lineGap}></div>
+
+          <p className={styles.whoAreWeDesc}>
+            Niezależnie od tego, czy chcesz uruchomić nową stronę internetową, odświeżyć istniejącą, czy poprawić swoją 
+            strategię marketingową online, posiadamy wiedzę i doświadczenie, które pomogą Ci zwiększyć zyski i odnieść sukces.
+          </p>
+        </div>
+
+    
+
         <div className={styles.howWeWorkSectionLabel}>
           <div className={styles.howWeWorkTopLabel}>
             <h1 data-aos="fade-down">Jak pracujemy?</h1>
@@ -226,7 +282,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-          
+
         <div className={styles.howWeWorkSection}>
           <div className={styles.stepsDiv}>
             <div className={styles.steps}>
@@ -298,197 +354,9 @@ const Home = () => {
           </div>
         </div>
 
-
-
-          
-
-          {/* 
-          
-          Zbudować wybitny zespół ekspertów, który poradzi sobie z każdym wyzwaniem
-
-          Traktować każdego klienta jako część zespołu
-
-          Rozwijaj tylko te projekty, w które wierzymy
-
-          Traktujemy każdy projekt - mały czy duży - jako równie ważny
-
-          Proponuj ulepszenia i przyczyniaj się do sukcesu projektu
-
-          Znajdź czas dla klientów, kiedy tylko tego potrzebują
-
-          Wkładamy całe serce w to, co robimy
-
-          Poszerzamy naszą wiedzę i dzielimy się nią z klientami
-
-          Bądź dumny z tego, co dostarczamy 
-          
-          */}
-
-          
-
-
-        <div className={styles.whoAreWeSection}>
-          <h1 data-aos="fade-down">Kim jesteśmy?</h1>
-          <div className={styles.lines} data-aos="fade-left">
-            <div className={styles.FirstLine}></div>
-            <div className={styles.SecondLine}></div>
-            <div className={styles.ThirdLine}></div>
-          </div>
-          <p className={styles.whoAreWeDesc}>
-            Cometweb założone zostało przez trójkę przyjaciół znających się od dzieciństwa, kochających kodowanie i projektowanie
-            stron internetowych. Razem ukończyliśmy politechnikę Gdańską, po czym latami w największych korporacjach zdobywaliśmy doświadczenie, 
-            które teraz wykorzystujemy w budowaniu silnej pozycji w Internecie naszych klientów. 
-          </p>
-
-          <div className={styles.lineGap}></div>
-
-          <p className={styles.whoAreWeDesc}>
-            W Cometweb rozumiemy jak ważna jest silna obecność w sieci w dzisiejszym cyfrowym świecie. 
-            Dlatego też ściśle współpracujemy z naszymi klientami, aby zrozumieć ich cele i wizje, a następnie przełożyć 
-            je na stronę internetową, która dokładnie reprezentuje ich markę i napędza wyniki.
-            Wykorzystujemy najnowsze technologie i trendy w projektowaniu, aby tworzyć strony internetowe, które są nie 
-            tylko atrakcyjne wizualnie, ale również funkcjonalne i przyjazne dla użytkownika.
-          </p>
-
-          <div className={styles.lineGap}></div>
-
-          <p className={styles.whoAreWeDesc}>
-            Niezależnie od tego, czy chcesz uruchomić nową stronę internetową, odświeżyć istniejącą, czy poprawić swoją 
-            strategię marketingową online, posiadamy wiedzę i doświadczenie, które pomogą Ci zwiększyć zyski i odnieść sukces.
-          </p>
-        </div>
-
-        <div className={styles.ourValuesSection}>
-          <p className={styles.footerColumn}>
-            <FaAngleRight />  Tworzymy unikalne i wyróżniające się na tle konkurencji projekty
-          </p>
-
-          <p className={styles.footerColumn}>
-            <FaAngleRight />  Skupiamy się na Twoich potrzebach, jasna i skuteczna komunikacja jest niezbędna, aby być pewnym, że spełnimy wszystkie Twoje wymagania
-          </p>
-
-          <p className={styles.footerColumn}>
-            <FaAngleRight />  Pracujemy w zespole ekspertów, którzy poradzą sobie z każdym zadaniem i jak najszybciej dostarczą Ci gotową aplikację
-          </p>
-
-          <p className={styles.footerColumn}>
-            <FaAngleRight />  Dbamy o każdy szczegół, aby każdy aspekt strony internetowej działa poprawnie i spełniał Twoje wymagania
-          </p>
-
-          <p className={styles.footerColumn}>
-            <FaAngleRight />  Stale się rozwijamy, jesteśmy na bieżąco z najnowszymi trendami i technologiami
-          </p>
-
-          <p className={styles.footerColumn}>
-            <FaAngleRight />  Każdy projekt - mały czy duży - traktujemy jako równie ważny
-          </p>
-
-          <p className={styles.footerColumn}>
-            <FaAngleRight />  Wkładamy całe serce w to co robimy, jesteśmy dumnie z aplikacji, które dostarczamy
-          </p>
-        </div>
+        <Values />
 
       </div>
-
-      {/* //--------------------------------------------------------// */}
-      {/* //------------------------ FOOTER ------------------------// */}
-      {/* //--------------------------------------------------------// */}
-
-      <footer className={styles.footerSection}>
-        <div className={styles.footerContainer}>
-          <div className={styles.footerWrapper}>
-            <div  className={styles.footerNav}>
-              <div className={styles.box}>
-                <p className={styles.footerColumn}>
-                  Strony i aplikacje webowe
-                </p> 
-                <span className={styles.underlineWhite}></span>
-              </div>
-
-              <div className={styles.box}>
-                <p className={styles.footerColumn}>
-                  Social media marketing
-                </p> 
-                <span className={styles.underlineWhite}></span>
-              </div>
-
-              <div className={styles.box}>
-                <p className={styles.footerColumn}>
-                  Vulnerability testy
-                </p> 
-                <span className={styles.underlineWhite}></span>
-              </div>
-
-              {/* <div className={styles.box}>
-                <p className={styles.footerColumn}>
-                  Portfolio
-                </p> 
-                <span className={styles.underlineWhite}></span>
-              </div> */}
-
-              <div className={styles.box}>
-                <p className={styles.footerColumn}>
-                  Kontakt
-                </p> 
-                <span className={styles.underlineWhite}></span>
-              </div>
-            </div>
-
-            <div  className={styles.footerNav}>
-              <div className={styles.box}>
-                <p className={styles.footerColumn}>
-                  <FaAngleRight />  Polityka prywatności
-                </p>
-                <span className={styles.underlineWhite}></span>
-              </div>
-
-              <div className={styles.box}>
-                <p className={styles.footerColumn}>
-                  <FaAngleRight /> Polityka Cookie
-                </p> 
-                <span className={styles.underlineWhite}></span>
-              </div>
-
-              <div className={styles.box}>
-                <p className={styles.footerColumn}>
-                  <FaAngleRight /> FAQ
-                </p>  
-                <span className={styles.underlineWhite}></span>
-              </div>
-            </div>
-
-            <div  className={styles.footerNav}>
-              <div className={styles.box}>
-                <p className={styles.footerColumn}>
-                  <FaEnvelope /> kontakt@cometweb.pl
-                </p>
-                <span className={styles.underlineWhite}></span>
-              </div>
-
-              <div className={styles.box}>
-                <p className={styles.footerColumn}>
-                  <FaPhoneAlt/> +48 690 688 835
-                </p> 
-                <span className={styles.underlineWhite}></span>
-              </div>
-
-              <div className={styles.box}>
-                <p className={styles.footerColumn}>
-                  <FaFacebookSquare/> fb.com/cometweb
-                </p> 
-              <span className={styles.underlineWhite}></span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.copyrightFooter}>
-          <div className={styles.copyrightDiv}>
-            <p>© All rights reserved</p>
-            <img className={styles.footerLogo} alt="CometwebLogo" src={`${process.env.PUBLIC_URL}/Cometweb/1transparentdown.png`}></img>
-          </div>
-        </div>
-      </footer>
     </>
   );
 };
